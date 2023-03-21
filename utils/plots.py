@@ -236,6 +236,8 @@ def plot_images(images, targets, paths=None, fname='images.jpg', names=None, max
             boxes[[1, 3]] += block_y
 
             if kpt_label and kpts.shape[1]:
+                if kpts.size==0:
+                    continue
                 if kpts.max()<1.01:
                     kpts[list(range(0,len(kpts),steps))] *=w # scale to pixels
                     kpts[list(range(1,len(kpts),steps))] *= h
