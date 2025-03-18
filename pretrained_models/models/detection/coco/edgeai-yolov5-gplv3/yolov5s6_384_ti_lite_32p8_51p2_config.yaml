@@ -32,8 +32,8 @@ session:
     accuracy_level: 1
     advanced_options:high_resolution_optimization: 0
     advanced_options:pre_batchnorm_fold: 1
-    advanced_options:calibration_frames: 1
-    advanced_options:calibration_iterations: 1
+    advanced_options:calibration_frames: 12
+    advanced_options:calibration_iterations: 12
     advanced_options:quantization_scale_type: 4
     advanced_options:activation_clipping: 1
     advanced_options:weight_clipping: 1
@@ -42,11 +42,11 @@ session:
     advanced_options:params_16bit_names_list: ''
     advanced_options:add_data_convert_ops: 3
     info:
-      prequantized_model_type: 0
+      prequantized_model_type: null
     object_detection:meta_arch_type: 6
     object_detection:meta_layers_names_list: yolov5s6_384_ti_lite_metaarch.prototxt
   model_path: yolov5s6_384_ti_lite_32p8_51p2.onnx
-  model_id: od-8110
+  model_id: od-8110expt
   input_details: null
   output_details: null
   num_inputs: 1
