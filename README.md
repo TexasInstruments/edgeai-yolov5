@@ -1,4 +1,12 @@
-# YOLOV5-ti-lite Object Detection Models
+# edgeai-yolov5
+
+### Notice: This repository is not maintained and the setup may not readily work.
+
+Recommend the following alternatives instead of this:
+* For newer Object Detection models such as YOLOX, YOLOV7, YOLOV9, RTMDET and also for other models such as SSD, EfficientDet etc., **edgeai-mmdetection** can be used **(recommended)**
+* Some YOLO based models can also be trained after modifying mmyolo by following the guidelines provided here: https://github.com/TexasInstruments/edgeai-tensorlab/issues/7
+
+## YOLOV5-ti-lite Object Detection Models
 This repository is based on [ultralytics/yolov5](https://github.com/ultralytics/yolov5). As per the [Official Readme file from Ultralytics](./README_ultralytics.md), YOLOV5 is a family of object detectors with the following major differences from YOLOV3:
 * Darknet-csp backbone instead of vanilla Darknet. Reduces complexity by 30%. 
 * PANet feature extractor instead of FPN.
